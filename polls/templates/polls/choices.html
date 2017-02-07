@@ -1,0 +1,9 @@
+{% if latest_choices_list %}
+    <ul>
+    {% for choice in latest_choices_list %}
+        <li>{{ choice.choice_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
